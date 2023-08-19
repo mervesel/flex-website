@@ -1,0 +1,249 @@
+:root{
+    --white: #fff;
+    --primary: #614BC3;
+    --secondary: #C4C1A4;
+    --success: #7A9D54;
+    --danger: #D71313;
+    --warning: #F4D160;
+    --info: #75C2F6;
+    --dark: #606C5D;
+    --light: #F0F0F0;
+}
+
+/* text color */
+.text-primary{
+    color: var(--primary);
+}
+.text-secondary{
+    color: var(--secondary);
+}
+.text-success{
+    color: var(--success);
+}
+.text-danger{
+    color: var(--danger);
+}
+.text-warning{
+    color: var(--warning);
+}
+.text-info{
+    color: var(--info);
+}
+.text-dark{
+    color: var(--dark);
+}
+.text-light{
+    color: var(--light);
+}
+
+/* background color */
+.bg-primary{
+    background-color: var(--primary);
+}
+.bg-secondary{
+    background-color: var(--secondary);
+}
+.bg-success{
+    background-color: var(--success);
+}
+.bg-danger{
+    background-color: var(--danger);
+}
+.bg-warning{
+    background-color: var(--warning);
+}
+.bg-info{
+    background-color: var(--info);
+}
+.bg-dark{
+    background-color: var(--dark);
+}
+.bg-light{
+    background-color: var(--light);
+}
+
+/* buttons */
+.btn{
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 20px 0 20px 20px;
+    border-top-right-radius: none;
+
+}
+.btn:hover{
+    opacity: .9;
+}
+.btn-primary{
+    background-color: var(--primary);
+    color: var(--white);
+}
+.btn-secondary{
+    background-color: var(--secondary);
+    color: var(--white);
+}
+.btn-success{
+    background-color: var(--success);
+    color: var(--white);
+}
+.btn-danger{
+    background-color: var(--danger);
+    color: var(--white);
+}
+.btn-warning{
+    background-color: var(--warning);
+    color: var(--white);
+}
+.btn-info{
+    background-color: var(--info);
+    color: var(--white);
+}
+.btn-dark{
+    background-color: var(--dark);
+    color: var(--white);
+}
+.btn-light{
+    background-color: var(--light);
+    color: var(--white);
+}
+.btn-outline-primary{
+    background-color: transparent;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+}
+.btn-outline-secondary{
+    background-color: transparent;
+    border: 2px solid var(--secondary);
+    color: var(--secondary);
+}
+.btn-outline-success{
+    background-color: transparent;
+    border: 2px solid var(--success);
+    color: var(--success);
+}
+.btn-outline-info{
+    background-color: transparent;
+    border: 2px solid var(--info);
+    color: var(--info);
+}
+.btn-outline-danger{
+    background-color: transparent;
+    border: 2px solid var(--danger);
+    color: var(--danger);
+}
+.btn-outline-primary:hover{
+    background-color: var(--primary);
+    color: var(--white);
+
+}
+.btn-outline-secondary:hover{
+    background-color: var(--secondary);
+    color: var(--white);
+
+}
+
+/* flex items */
+.flex-items{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+
+}
+
+.flex-items .img{
+    width: 5rem;
+    height: 5rem;
+}
+.flex-items > div{
+    padding: 2rem;
+    flex-basis: 100%;
+}
+/* flex columns */
+.flex-columns.flex-reverse .row{
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+.flex-columns .row{
+    display: flex;
+}
+.flex-columns .column{
+    flex: 1;
+}
+.flex-columns .column .column-1,
+.flex-columns .column .column-2{
+    height: 100%;
+}
+.flex-columns .column .column-2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 3rem;
+}
+.flex-columns img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/*flex grid*/
+.flex-grid .row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 .4rem;
+}
+.flex-grid .column{
+    flex: 25%;
+    padding: 0 .4rem;
+}
+
+
+/* section */
+.section-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem;
+}
+.section-header h2{
+    font-size: 4rem;
+    margin: 3rem 0;
+}
+.section-padding{
+    padding: 2rem 2rem 4rem;
+}
+/* card */
+.card{
+    color: var(--light);
+    font-weight: 700;
+}
+.card-body{
+    padding: 2rem;
+    margin-top: -1rem;
+    margin-bottom: 2rem;
+}
+/* teams */
+
+@media (max-width: 768px){
+    .flex-items {
+        flex-direction: column;
+    }
+    .flex-columns .row{
+        flex-direction: column;
+    }
+    .flex-columns .column{
+        flex: 100%;
+    }
+    .flex-items > div{
+        padding: 1rem;
+    }
+    .flex-grid .column{
+        flex: 50%;
+    }
+}
+
